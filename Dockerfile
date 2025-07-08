@@ -2,6 +2,7 @@ FROM apache/superset
 
 ENV SUPERSET_ENV=production
 ENV SUPERSET_SECRET_KEY=clave_ultra_secreta_superlarga_12345678!@#
+ENV PYTHONPATH=/app/pythonpath
 
 COPY superset_config.py /app/pythonpath/superset_config.py
 
