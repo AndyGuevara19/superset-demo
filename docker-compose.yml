@@ -7,7 +7,8 @@ services:
       - "8088:8088"
     environment:
       - SUPERSET_ENV=production
-      - SUPERSET_SECRET_KEY=tu_clave_ultra_secreta_123!@#
+      - SUPERSET_SECRET_KEY=una_clave_super_segura_1234!@#
+      - PYTHONPATH=/app/pythonpath
     volumes:
       - ./superset_home:/app/superset_home
       - ./superset_config.py:/app/pythonpath/superset_config.py
