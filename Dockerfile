@@ -12,6 +12,5 @@ CMD superset db upgrade && \
         --lastname Admin \
         --email admin@superset.com \
         --password admin && \
-    superset load_examples && \
     superset init && \
     superset run -h 0.0.0.0 -p 8088
